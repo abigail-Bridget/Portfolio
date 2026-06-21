@@ -1,8 +1,12 @@
+/* ============================================
+   OVER MIJ — Paginastijlen
+   ============================================ */
 
 body {
     background: var(--white);
 }
 
+/* ── GRID LAYOUT ── */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -17,7 +21,7 @@ body {
     }
 }
 
-
+/* ── TEKST KOLOM ── */
 .about-text p {
     color: var(--txt2);
     line-height: 1.8;
@@ -48,7 +52,7 @@ body {
     flex-shrink: 0;
 }
 
-
+/* ── KAART KOLOM ── */
 .about-card {
     background: var(--lav-bg);
     border-radius: 1.75rem;
@@ -79,7 +83,7 @@ body {
     justify-content: center;
 }
 
-
+/* ── TIJDLIJN KAARTJE ── */
 .timeline-card {
     margin-top: 1.25rem;
     background: var(--rose-bg);
@@ -127,7 +131,7 @@ body {
     color: var(--txt);
     font-weight: 500;
 }
-
+/* ── FOTO SECTIE ── */
 
 .foto-vierkant {
     width: 100%;

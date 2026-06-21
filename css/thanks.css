@@ -17,7 +17,7 @@
             rgba(216,198,249,.25),
             transparent 35%),
 
-            var(--bg);
+            var(--page-bg);
 }
 
 .thanks-card {
