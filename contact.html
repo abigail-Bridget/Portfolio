@@ -34,7 +34,6 @@
 
     <div class="contact-grid">
 
-
         <div class="contact-profile-card">
 
             <div class="contact-photo-wrap">
@@ -76,7 +75,6 @@
 
         </div>
 
-
         <div class="contact-form-card">
 
             <p class="lead">Of stuur me een berichtje:</p>
@@ -101,8 +99,6 @@
                     <textarea id="bericht" name="bericht" required></textarea>
                 </div>
 
-                <input type="hidden" name="_next" value="https://abigail-bridget.github.io/Portfolio/thanks.html">
-
                 <button type="submit" class="send-btn">
                     Verstuur bericht ✿
                 </button>
@@ -114,11 +110,28 @@
     </div>
 
 </main>
+
 <footer class="footer">
     <span>✿</span> Portfolio · Abigail Toekimin · 2026
 </footer>
 
 <script src="js/petals.js"></script>
+
+<script>
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+            window.location.href = 'thanks.html';
+        }
+    });
+</script>
 
 </body>
 </html>
