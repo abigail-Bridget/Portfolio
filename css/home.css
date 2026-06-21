@@ -1,0 +1,105 @@
+
+
+.hero-wrap {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-blob {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.18;
+    pointer-events: none;
+}
+.b1 { width: 500px; height: 500px; background: var(--rose);  top: -120px; right: -100px; }
+.b2 { width: 380px; height: 380px; background: var(--lav);   bottom: -80px; left: -80px; }
+.b3 { width: 260px; height: 260px; background: var(--blue);  top: 40%; left: 10%; }
+
+.hero-inner {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+}
+
+
+.hero-flower {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 2rem;
+    display: block;
+}
+
+.petal      { transform-origin: 65px 78px; animation: bloom 1.2s ease-out forwards; opacity: 0; }
+.petal:nth-child(1) { animation-delay: 0.08s; }
+.petal:nth-child(2) { animation-delay: 0.18s; }
+.petal:nth-child(3) { animation-delay: 0.28s; }
+.petal:nth-child(4) { animation-delay: 0.38s; }
+.petal:nth-child(5) { animation-delay: 0.48s; }
+.petal:nth-child(6) { animation-delay: 0.58s; }
+.petal:nth-child(7) { animation-delay: 0.68s; }
+.petal:nth-child(8) { animation-delay: 0.78s; }
+
+.stem-g  { animation: stem 0.7s ease-out forwards; transform-origin: 65px 130px; transform: scaleY(0); }
+.cc      { animation: pop 0.3s 0.7s ease-out forwards; transform-origin: center; transform: scale(0); opacity: 0; }
+
+@keyframes bloom {
+    0%   { opacity: 0; transform: scale(0); }
+    60%  { opacity: 1; transform: scale(1.08); }
+    100% { opacity: 1; transform: scale(1); }
+}
+@keyframes stem {
+    0%   { transform: scaleY(0); opacity: 0; }
+    100% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes pop {
+    0%   { transform: scale(0); opacity: 0; }
+    70%  { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.hero-tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--lav-mid);
+    margin-bottom: 0.9rem;
+}
+
+.hero-h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+    color: var(--txt);
+    line-height: 1.12;
+    margin-bottom: 1.2rem;
+}
+
+.hero-h1 em { color: var(--rose-deep); font-style: italic; }
+
+.hero-sub {
+    font-size: 1rem;
+    color: var(--txt2);
+    line-height: 1.75;
+    font-weight: 300;
+    margin-bottom: 2.2rem;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.scroll-hint {
+    margin-top: 3rem;
+    font-size: 0.75rem;
+    color: var(--txt3);
+    letter-spacing: 0.08em;
+}

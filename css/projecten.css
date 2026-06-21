@@ -1,0 +1,116 @@
+
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+
+.project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: var(--white);
+    border-radius: 1.25rem;
+    border: 1.5px solid rgba(168, 126, 221, 0.12);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 32px rgba(107, 59, 170, 0.12);
+    border-color: rgba(168, 126, 221, 0.4);
+}
+
+
+.card-header {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: stretch;
+}
+
+@media (max-width: 560px) {
+    .card-header { grid-template-columns: 1fr; }
+}
+
+
+.card-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    min-height: 130px;
+    overflow: hidden;
+}
+
+.card-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rose-bg { background: var(--rose-bg); }
+.lav-bg  { background: var(--lav-bg); }
+.blue-bg { background: var(--blue-bg); }
+.sage-bg { background: var(--sage-bg); }
+
+
+.card-summary {
+    padding: 1.25rem 1.25rem 1.25rem 1.1rem;
+}
+
+.card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--txt);
+    margin-bottom: 0.35rem;
+    text-decoration: none;
+}
+
+.card-short {
+    font-size: 0.85rem;
+    color: var(--txt2);
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+}
+
+
+.tech-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.tech {
+    font-size: 0.68rem;
+    padding: 0.18rem 0.5rem;
+    background: rgba(107, 59, 170, 0.08);
+    color: var(--lav-deep);
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.card-toggle {
+    font-size: 0.78rem;
+    color: var(--lav-mid);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.project-card:hover .card-toggle {
+    color: var(--lav-deep);
+}
+
+.eyebrow {
+    display: none;
+}

@@ -1,0 +1,194 @@
+
+.terug-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    color: var(--lav-mid);
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+}
+
+.terug-link:hover { color: var(--lav-deep); }
+
+.project-header {
+    margin-bottom: 2.5rem;
+}
+
+.project-header .eyebrow {
+    margin-bottom: 0.5rem;
+}
+
+.project-titel {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--txt);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+}
+
+.project-subtitel {
+    font-size: 1rem;
+    color: var(--txt2);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    max-width: 600px;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.project-foto {
+    width: 100%;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    background: var(--lav-bg);
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.project-foto .foto-placeholder {
+    font-size: 5rem;
+    opacity: 0.4;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+@media (max-width: 640px) {
+    .project-content { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+
+.project-beschrijving h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--txt);
+    margin-bottom: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.project-beschrijving h2:first-child { margin-top: 0; }
+
+.project-beschrijving p {
+    font-size: 0.95rem;
+    color: var(--txt2);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+
+.project-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.sidebar-blok {
+    background: var(--white);
+    border-radius: 1.1rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(168, 126, 221, 0.12);
+}
+
+.sidebar-blok-titel {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--lav-mid);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.sidebar-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.sidebar-tech .tech {
+    font-size: 0.75rem;
+    padding: 0.28rem 0.65rem;
+    background: rgba(107, 59, 170, 0.08);
+    color: var(--lav-deep);
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.sidebar-info-rij {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-info-item {
+    display: flex;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--txt2);
+    font-weight: 300;
+}
+
+.sidebar-info-item strong {
+    color: var(--txt);
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+
+.github-knop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 50px;
+    background: var(--lav-deep);
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s;
+    text-align: center;
+}
+
+.github-knop:hover { background: var(--lav-mid); }
+
+.github-knop svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+.sidebar-tech .pill {
+    font-size: 0.75rem;
+    padding: 0.28rem 0.75rem;
+}
+
+.project-header .eyebrow {
+    display: none;
+}

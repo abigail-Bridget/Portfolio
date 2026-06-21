@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+
+<nav class="topnav">
+    <a href="index.html" class="nav-brand">✿ Portfolio</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over-mij.html">Over mij</a></li>
+        <li><a href="projecten.html">Projecten</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="wrap">
+
+    <p class="eyebrow">Zeg hallo</p>
+    <h1 class="page-title">Laten we connecten</h1>
+
+    <p class="contact-intro">
+        Ben je benieuwd naar mijn werk of wil je kennismaken?
+        Neem gerust contact met me op. Ik vertel je graag meer over mijn projecten,
+        interesses en ontwikkeling als maker.
+    </p>
+
+    <div class="contact-grid">
+
+
+        <div class="contact-profile-card">
+
+            <div class="contact-photo-wrap">
+                <img src="images/abigail1.jpeg"
+                     alt="Foto van Abigail Toekimin"
+                     class="contact-photo">
+            </div>
+
+            <h2 class="contact-name">Abigail Toekimin</h2>
+            <p class="contact-role">CMGT · Hogeschool Rotterdam</p>
+
+            <div class="contact-item">
+                <div class="contact-icon ci-rose">✉️</div>
+                <div>
+                    <p class="contact-label">E-mail</p>
+                    <p class="contact-val">abigailbridget@outlook.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon ci-lav">💼</div>
+                <div>
+                    <p class="contact-label">LinkedIn</p>
+                    <p class="contact-val">
+                        <a href="https://www.linkedin.com/in/abigail-toekimin-7242bb201/" target="_blank">
+                            Bekijk mijn LinkedIn →
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon ci-blue">📍</div>
+                <div>
+                    <p class="contact-label">Locatie</p>
+                    <p class="contact-val">Rhoon/Rotterdam, Nederland</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contact-form-card">
+
+            <p class="lead">Of stuur me een berichtje:</p>
+
+            <form
+                    id="contact-form"
+                    action="https://formspree.io/f/mzdqnlrd"
+                    method="POST">
+
+                <div class="form-field">
+                    <label for="naam">Jouw naam</label>
+                    <input type="text" id="naam" name="naam" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" required></textarea>
+                </div>
+
+                <input type="hidden" name="_redirect" value="thanks.html">
+
+                <button type="submit" class="send-btn">
+                    Verstuur bericht ✿
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
+<footer class="footer">
+    <span>✿</span> Portfolio · Abigail Toekimin · 2026
+</footer>
+
+<script src="js/petals.js"></script>
+
+</body>
+</html>

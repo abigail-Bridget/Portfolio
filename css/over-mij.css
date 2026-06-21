@@ -1,0 +1,153 @@
+
+body {
+    background: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+@media (max-width: 640px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+
+.about-text p {
+    color: var(--txt2);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.fun-facts {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.fun-fact {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.88rem;
+    color: var(--txt2);
+}
+
+.fact-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+
+.about-card {
+    background: var(--lav-bg);
+    border-radius: 1.75rem;
+    padding:  2rem;
+    text-align: center;
+
+}
+
+
+.about-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--txt);
+    margin-bottom: 0.2rem;
+}
+
+.about-role {
+    font-size: 0.82rem;
+    color: var(--txt3);
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+}
+
+.pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+
+.timeline-card {
+    margin-top: 1.25rem;
+    background: var(--rose-bg);
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+
+.timeline-card-title {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--rose-mid);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+}
+
+.t-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.t-year {
+    font-size: 0.78rem;
+    color: var(--txt3);
+    margin-bottom: 0.1rem;
+}
+
+.t-label {
+    font-size: 0.875rem;
+    color: var(--txt);
+    font-weight: 500;
+}
+
+
+.foto-vierkant {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+
+.foto-vierkant img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .foto-ring { width: 150px; height: 150px; }
+}
+
+.eyebrow {
+    display: none;
+}

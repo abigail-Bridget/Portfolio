@@ -1,0 +1,118 @@
+
+.thanks-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    background:
+            radial-gradient(circle at top right,
+            rgba(249,198,216,.25),
+            transparent 35%),
+
+            radial-gradient(circle at bottom left,
+            rgba(216,198,249,.25),
+            transparent 35%),
+
+            var(--bg);
+}
+
+.thanks-card {
+    width: 100%;
+    max-width: 700px;
+
+    background: rgba(255,255,255,.9);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 2rem;
+
+    padding: 4rem 3rem;
+
+    text-align: center;
+
+    box-shadow:
+            0 20px 60px rgba(107,59,170,.12);
+
+    position: relative;
+    z-index: 10;
+}
+
+.flower-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.thanks-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+
+    color: var(--rose-mid);
+
+    font-size: .8rem;
+
+    margin-bottom: 1rem;
+}
+
+.thanks-card h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    color: var(--txt);
+
+    margin-bottom: 1rem;
+}
+
+.thanks-text {
+    color: var(--txt2);
+
+    line-height: 1.8;
+
+    max-width: 520px;
+
+    margin: 0 auto 2rem;
+}
+
+.back-home-btn {
+    display: inline-block;
+
+    padding: 1rem 2rem;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    background: var(--lav-deep);
+
+    color: white;
+
+    font-weight: 600;
+
+    transition: .2s ease;
+}
+
+.back-home-btn:hover {
+    transform: translateY(-2px);
+
+    background: var(--lav-mid);
+}
+
+
+
+@media (max-width: 600px) {
+
+    .thanks-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .flower-icon {
+        font-size: 3rem;
+    }
+}
+.eyebrow {
+    display: none;
+}
